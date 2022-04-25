@@ -1,6 +1,6 @@
 module.exports = {
-    API_KEY: 'TMYqdPJuQU6IW5uKJw9ovPUF9',
-    API_SECRET: 'UHZRXVUD3t1gtwwYu0rj5aPUbFGPG3sS57pktAlVVXpjIBfXgx',
-    API_ACCESS_TOKEN: '997586967188525062-rxL5JiPFiH2AZTt7SJWeVWIyqedBjia',
-    API_TOKEN_SECRET: 'st5NxbsVFE3IsDkxn9mKm3XDQDIokHfDMbmmpeDPekCqN'
+    API_KEY: '', // Twitter API Key
+    API_SECRET: '', // Twitter API Secret
+    API_ACCESS_TOKEN: '', // Twitter Access Token
+    API_TOKEN_SECRET: '' // Twitter Access Token Secret
 }

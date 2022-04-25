@@ -10,3 +10,60 @@ A Discord Bot that allows you to Subscribe to a Twitter Users Tweets and send th
 - Twit (v2.2.11)
 
 ---
+
+## Self Hosting
+1. Download or Fork this Repo
+2. Extract the Files to a Destination on your PC
+3. Open the Files in a Editor/IDE of your choice
+
+- Run `npm install` to install Dependencies
+- Run `npm run dev` to run the Bot in Development
+- Run `npm start` to run the Bot in Production 
+
+---
+
+## Config Setup
+1. Open [configs/embed](./configs/embed.js) and Edit the Values.
+2. Open [configs/main](./configs/main.js) and Edit the Values.
+3. Open [configs/twit](./configs/twit.js) and Edit the Values.
+
+- Values are explained below.
+
+---
+
+## Config Values
+
+### Embed Config
+
+```js
+color: '', // Embed Footer Color should be a Hex
+footerText: '', // Embed Footer Content should be a String
+footerIcon: '' // Embed Thumbnail and Footer Image should be a PNG
+```
+
+### Main Config
+
+```js
+clientID: '', // Discord Client ID
+disToken: '', // Discord Client Token
+botInvite: '', // Discord Client Invite
+supServer: '', // Support Server Invite
+ownerID: '', // Client Owner ID
+mongoURI: '', // Mongo Connection String
+devs: [ // Array of Developer IDs
+  ''
+]
+```
+
+### Twit Config
+
+```js
+API_KEY: '', // Twitter API Key
+API_SECRET: '', // Twitter API Secret
+API_ACCESS_TOKEN: '', // Twitter Access Token
+API_TOKEN_SECRET: '' // Twitter Access Token Secret
+```
+
+- Obtaining the Twitter API Keys, Tokens and Secrets can be done from [Twitter Dev Portal](https://developer.twitter.com/en/portal/dashboard)
+- Obtaining the Client Token and ID can be Done from [Discord Dev Portal](https://discord.com/developers/applications)
+
