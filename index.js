@@ -5,6 +5,7 @@ const Logger = require('@Handlers/logger');
 const GuildDB = require('@Database/models/guilds');
 const handler = require('@Handlers/client');
 const { twitClient } = require('@Handlers/twit');
+const { guildSync } = require('@Handlers/guilds');
 const config = require('@Configs/main');
 const Discord = require('discord.js');
 
@@ -41,6 +42,7 @@ client.config = config;
 handler.loadEvents(client);
 handler.loadSlashCommands(client);
 twitClient(client);
+guildSync(client);
 
 process.on("uncaughtException", (err) => {
     console.log("Uncaught Exception: " + err);

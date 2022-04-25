@@ -1,29 +1,17 @@
 const DBClient = require('@Database/index.js');
 const GuildDB = require('@Database/models/guilds');
-const { GuildEmojiRoleManager } = require('discord.js');
 
-module.exports = {
-    name: 'ready',
-    once: true,
+module.exports.guildSync = async (client) => {
 
-    /**
-     * @param {Client} client 
-     */
-    async execute(client) {
+    setInterval(async () => {
 
-        await DBClient(client.config.mongoURI)
-
-        client.user.setActivity("with Tweets!", {
-            type: "PLAYING",
-            name: "with Tweets!"
-        });
+        try {
 
         await client.guilds.cache.forEach(async (g) => {
-            
+
             const guild = await GuildDB.findById(g.id);
 
             if (!guild) {
-                
                 const defaultGuild = {
                     _id: g.id,
                     handles: [],
@@ -31,7 +19,8 @@ module.exports = {
                 }
 
                 const newGuild = new GuildDB(defaultGuild);
-                GuildDB.saveGuild(newGuild);
+
+                GuildDB.saveGuild(newGuild)
             
             } else {
 
@@ -40,17 +29,14 @@ module.exports = {
                         let guildIDs = client.handles.get(h.name);
                         guildIDs.push(g.id);
                         client.handles.set(h.name, guildIDs);
-                    } else {
-                        client.handles.set(h.name, [g.id]);
                     }
                 });
 
                 if (guild.logChannel != 'none') client.logChannels[g.id] = guild.logChannel;
             }
-        });
-
-        client.logger.sendLogs(`${client.user.tag} is Online and Ready!`, 'ready')
-        
-        client.monitorTweets(true)
-    }
+        })
+       } catch(e) {
+           return client.logger.sendLogs(`Failed to Sync Guild Database and Client Handles: ${e.stack}`, 'error')
+      }
+    }, 5000)
 }
