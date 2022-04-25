@@ -72,5 +72,5 @@ API_TOKEN_SECRET: '' // Twitter Access Token Secret
 ---
 
 ## Support
-If you need support you can contact me [here](https://linkcord.bio/discord) in the Discord Server for my Main Project
+If you need support you can contact me [here](https://linkcord.bio/discord) in the Discord Server for my Main Project or via the [Discussions](https://github.com/TheRealToxicDev/Tweeter/discussions) Section of this Repo
 
