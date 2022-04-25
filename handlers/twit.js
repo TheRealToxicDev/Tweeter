@@ -88,7 +88,7 @@ module.exports.twitClient = async (client) => {
             for(let id of guilds) {
             if (client.logChannels[id]) {
                client.logger.sendLogs('Successfully Updated a Subscription Channel!', 'event');
-               client.channels.resolve(client.logChannels[id]).send({ embeds: [tweet_embed] });
+               return client.channels.resolve(client.logChannels[id]).send({ embeds: [tweet_embed] });
             }
           }
         });
