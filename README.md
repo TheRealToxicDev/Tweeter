@@ -67,3 +67,8 @@ API_TOKEN_SECRET: '' // Twitter Access Token Secret
 - Obtaining the Twitter API Keys, Tokens and Secrets can be done from [Twitter Dev Portal](https://developer.twitter.com/en/portal/dashboard)
 - Obtaining the Client Token and ID can be Done from [Discord Dev Portal](https://discord.com/developers/applications)
 
+---
+
+## Support
+If you need support you can contact me [here](https://linkcord.bio/discord) in the Discord Server for my Main Project
+
