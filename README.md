@@ -1,6 +1,6 @@
 <img width="150" height="150" align="left" style="float: left; margin: 0 10px 10px 0;" alt="Tweeter" src="https://cdn.discordapp.com/attachments/653733403841134600/967953913754042428/Tweeter.jpeg">
 
-<h1 style="color: #EF314B !important">Tweeter</h1>
+<h1 style="color: #EF314B;">Tweeter</h1>
 A Discord Bot that allows you to Subscribe to a Twitter Users Tweets and send them to a Discord Channel
 
 ---
