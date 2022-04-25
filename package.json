@@ -1,0 +1,36 @@
+{
+    "name": "tweeter",
+    "version": "1.0.0",
+    "description": "Discord Bot for Twitter Updates",
+    "main": "index.js",
+    "author": "Toxic Dev <https://toxicdev.me>",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "dependencies": {
+      "chalk": "^4.1.0",
+      "discord.js": "^13.6.0",
+      "dotenv": "^10.0.0",
+      "fs": "^0.0.1-security",
+      "glob": "^7.2.0",
+      "module-alias": "^2.2.2",
+      "moment": "^2.29.2",
+      "mongoose": "^6.0.12",
+      "promised-twit": "^0.1.0",
+      "twit": "^2.2.11"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.15"
+    },
+    "_moduleAliases": {
+      "@Root": ".",
+      "@Cmds": "./cmds",
+      "@Configs": "./configs",
+      "@Events": "./events",
+      "@Database": "./database",
+      "@Handlers": "./handlers"
+    }
+  }
