@@ -1,4 +1,4 @@
-# Tweeter
+# Tweeter!
 A Discord Bot that allows you to Subscribe to a Twitter Users Tweets and send them to a Discord Channel
 
 ---
