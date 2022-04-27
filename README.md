@@ -3,7 +3,7 @@
 <h1 style="color: #EF314B;">Tweeter</h1>
 A Discord Bot that allows you to Subscribe to a Twitter Users Tweets and send them to a Discord Channel
 
-<a href='https://infinitybotlist.com/bots/967948529593122857' title='widget'> <img src='https://infinitybots.gg/bots/967948529593122857/widget?size=large'></img></a>
+<a href='https://infinitybots.gg/bots/967948529593122857' title='widget'> <img src='https://infinitybots.gg/bots/967948529593122857/widget?size=large'></img></a>
 
 ---
 
